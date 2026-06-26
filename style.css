@@ -1,0 +1,54 @@
+body {
+    background-image: url("image.png");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1000px;
+}
+h1 {
+    color: #6B1E1E;
+}
+#taskInput {
+    padding: 20px;
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    display: block;
+}
+#taskInput:focus {
+    outline: none;
+}
+h1 {
+    text-align: center;
+}
+#app {
+    margin-left: 75px;
+}
+#addBtn {
+    cursor: pointer;
+    padding: 6px;
+    background-color: transparent;
+    border-color: #6B1E1E;
+}
+.deleteBtn {
+    padding: 4px;
+    margin-left: 6px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+li {
+    margin-bottom: 20px;
+    font-size: larger;
+}
+.noteInput {
+    margin-top: 8px;
+    border: none;
+    background-color: transparent;
+    display: block;
+}
+.noteInput:focus {
+    outline: none;
+}
+#message {
+    font-weight: bold;
+}
