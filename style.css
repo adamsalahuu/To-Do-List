@@ -1,12 +1,19 @@
 body {
-    background-image: url("image.jpg");
+    background-image: url("image.png");
     background-size: cover;
     background-attachment: fixed;
-    height: 1000px;
+    min-height: 100vh;
 }
+
 h1 {
     color: #6B1E1E;
+    text-align: center;
 }
+
+#app {
+    margin-left: 75px;
+}
+
 #taskInput {
     padding: 20px;
     font-size: 15px;
@@ -14,21 +21,18 @@ h1 {
     border: none;
     display: block;
 }
+
 #taskInput:focus {
     outline: none;
 }
-h1 {
-    text-align: center;
-}
-#app {
-    margin-left: 75px;
-}
+
 #addBtn {
     cursor: pointer;
     padding: 6px;
     background-color: transparent;
     border-color: #6B1E1E;
 }
+
 .deleteBtn {
     padding: 4px;
     margin-left: 6px;
@@ -36,19 +40,43 @@ h1 {
     background-color: red;
     color: white;
 }
+
 li {
     margin-bottom: 20px;
     font-size: larger;
 }
+
 .noteInput {
     margin-top: 8px;
     border: none;
     background-color: transparent;
     display: block;
 }
+
 .noteInput:focus {
     outline: none;
 }
+
 #message {
     font-weight: bold;
+}
+
+/* للموبايل فقط */
+@media (max-width: 768px) {
+
+    #app {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #taskInput,
+    .noteInput {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #addBtn {
+        width: 100%;
+    }
+
 }
